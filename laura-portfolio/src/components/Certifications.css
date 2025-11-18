@@ -1,0 +1,76 @@
+.certifications {
+  padding: 6rem 0;
+  background: var(--background);
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+.certification-card {
+  background: var(--white);
+  padding: 2.5rem 2rem;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(107, 70, 193, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.certification-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient);
+}
+
+.certification-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(107, 70, 193, 0.15);
+}
+
+.certification-card.completed {
+  border-top: 4px solid #10B981;
+}
+
+.certification-card.in-progress {
+  border-top: 4px solid #F59E0B;
+}
+
+.certification-card h3 {
+  color: var(--primary-dark);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.certification-card p {
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+}
+
+.status-badge {
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-badge.earned {
+  background: linear-gradient(135deg, #10B981, #34D399);
+  color: white;
+}
+
+.status-badge.progress {
+  background: linear-gradient(135deg, #F59E0B, #FBBF24);
+  color: white;
+}

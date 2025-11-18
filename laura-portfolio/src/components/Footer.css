@@ -1,0 +1,28 @@
+.footer {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  color: var(--white);
+  text-align: center;
+  padding: 3rem 0;
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+}
+
+.footer p {
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+.footer p:last-child {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
