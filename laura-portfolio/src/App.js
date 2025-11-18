@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import './animations.css'; // Add this line
+import { ThemeProvider } from './context/ThemeContext';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -11,16 +13,18 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Hero />
-      <About />
-      <Education />
-      <Certifications />
-      <Projects />
-      <Contact />
-      <Footer />
-    </div>
+    <ThemeProvider>
+      <div className="App">
+        <Header />
+        <Hero />
+        <About />
+        <Education />
+        <Certifications />
+        <Projects />
+        <Contact />
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
 

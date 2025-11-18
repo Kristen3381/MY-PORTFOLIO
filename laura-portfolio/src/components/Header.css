@@ -1,12 +1,13 @@
 .header {
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--card-bg);
   backdrop-filter: blur(10px);
-  box-shadow: 0 2px 20px rgba(107, 70, 193, 0.1);
+  box-shadow: 0 2px 20px rgba(37, 99, 235, 0.1);
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
   transition: all 0.3s ease;
+  border-bottom: 1px solid var(--border);
 }
 
 .navbar {
@@ -16,6 +17,12 @@
   padding: 1.2rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 .nav-brand h2 {
@@ -50,7 +57,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--gradient-pink);
+  background: var(--gradient-gold);
   transition: width 0.3s ease;
 }
 
@@ -64,6 +71,10 @@
 
 /* Mobile responsive */
 @media (max-width: 768px) {
+  .nav-right {
+    gap: 1rem;
+  }
+  
   .nav-menu {
     flex-direction: column;
     gap: 1rem;
@@ -71,13 +82,14 @@
     top: 100%;
     left: 0;
     width: 100%;
-    background: var(--white);
+    background: var(--card-bg);
     padding: 1rem;
     box-shadow: var(--shadow);
     transform: translateY(-10px);
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
+    border: 1px solid var(--border);
   }
   
   .nav-menu.active {

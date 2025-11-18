@@ -1,6 +1,6 @@
 .projects {
   padding: 6rem 0;
-  background: var(--white);
+  background: var(--card-bg);
 }
 
 .projects-grid {
@@ -10,12 +10,12 @@
 }
 
 .project-card {
-  background: var(--white);
+  background: var(--card-bg);
   padding: 2.5rem;
   border-radius: 20px;
   box-shadow: var(--shadow);
   transition: all 0.3s ease;
-  border: 1px solid rgba(107, 70, 193, 0.1);
+  border: 1px solid var(--border);
   position: relative;
   overflow: hidden;
 }
@@ -35,7 +35,7 @@
 
 .project-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 25px 50px rgba(107, 70, 193, 0.2);
+  box-shadow: 0 25px 50px rgba(37, 99, 235, 0.2);
 }
 
 .project-card:hover::before {
@@ -65,4 +65,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  position: relative;
+  z-index: 2;
 }

@@ -5,9 +5,9 @@ const About = () => {
   return (
     <section id="about" className="about">
       <div className="container">
-        <h2 className="section-title">About Me</h2>
+        <h2 className="section-title animate-fade-in-up">About Me</h2>
         <div className="about-content">
-          <div className="about-text">
+          <div className="about-text animate-fade-in-left animate-delay-1">
             <p>
               I'm Laura Shaviya, a passionate 20-year-old software engineer and 
               aspiring data analyst currently pursuing my Computer Science degree 
@@ -24,20 +24,20 @@ const About = () => {
               solve real-world problems through data-driven solutions.
             </p>
           </div>
-          <div className="about-stats">
-            <div className="stat">
+          <div className="about-stats animate-fade-in-right animate-delay-2">
+            <div className="stat hover-lift">
               <h3>20</h3>
               <p>Years Old</p>
             </div>
-            <div className="stat">
+            <div className="stat hover-lift">
               <h3>3rd</h3>
               <p>Year Student</p>
             </div>
-            <div className="stat">
+            <div className="stat hover-lift">
               <h3>2</h3>
               <p>CISCO Certifications</p>
             </div>
-            <div className="stat">
+            <div className="stat hover-lift">
               <h3>2</h3>
               <p>Current Certifications in Progress</p>
             </div>

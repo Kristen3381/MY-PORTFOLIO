@@ -45,11 +45,11 @@
 .stat {
   text-align: center;
   padding: 2rem 1.5rem;
-  background: var(--white);
+  background: var(--card-bg);
   border-radius: 15px;
   box-shadow: var(--shadow);
   transition: transform 0.3s ease;
-  border: 1px solid rgba(107, 70, 193, 0.1);
+  border: 1px solid var(--border);
 }
 
 .stat:hover {

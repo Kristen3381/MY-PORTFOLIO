@@ -5,9 +5,9 @@ const Education = () => {
   return (
     <section id="education" className="education">
       <div className="container">
-        <h2 className="section-title">Education & Leadership</h2>
+        <h2 className="section-title animate-fade-in-up">Education & Leadership</h2>
         <div className="education-content">
-          <div className="education-item">
+          <div className="education-item animate-scale-in animate-delay-1 hover-lift">
             <h3>Masinde Muliro University of Science and Technology</h3>
             <p className="degree">Bachelor of Science in Computer Science</p>
             <p className="duration">2022 - Present (Third Year)</p>
